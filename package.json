@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/cqrs": "^10.2.8",
+    "@nestjs/mongoose": "^10.1.0",
+    "mongoose": "^8.9.5"
+  }
 }
