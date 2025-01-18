@@ -6,7 +6,8 @@ import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(process.env.DB_CONNECTION_STRING),
+    MongooseModule.forRoot('mongodb://localhost:27017/myDatabase'),
+    // MongooseModule.forRoot(process.env.DB_CONNECTION_STRING),
     UserModule],
   controllers: [AppController],
   providers: [AppService],
