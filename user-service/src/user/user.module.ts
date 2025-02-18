@@ -6,6 +6,7 @@ import { UserSchema, UserSchemaName } from './models/schemas/user.schema';
 import { LoginUserCommandHandler } from './providers/command-handlers/login-user-command-handler';
 import { RegisterUserCommandHandler } from './providers/command-handlers/register-user-command-handler';
 import { CqrsModule } from '@nestjs/cqrs';
+import { GetUserProfileHandler } from './providers/query-handlers/get-user-profile-query-handler';
 
 @Module({
   imports: [
@@ -18,6 +19,6 @@ import { CqrsModule } from '@nestjs/cqrs';
     CqrsModule
   ],
   controllers: [UserController],
-  providers: [LoginUserCommandHandler,RegisterUserCommandHandler]
+  providers: [LoginUserCommandHandler,RegisterUserCommandHandler,GetUserProfileHandler]
 })
 export class UserModule {}
