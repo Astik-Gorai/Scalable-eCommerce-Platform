@@ -12,6 +12,7 @@
   "dependencies": {
     "@nestjs/cqrs": "^10.2.8",
     "@nestjs/mongoose": "^10.1.0",
+    "bcrypt": "^5.1.1",
     "mongoose": "^8.9.5"
   }
 }
